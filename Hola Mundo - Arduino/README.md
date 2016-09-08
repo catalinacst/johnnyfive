@@ -1,7 +1,7 @@
-# Hola Mundo !
+# ¡Hola Mundo!
 
-Como todos conocen el paso más importante frente a un nuevo lenguaje es crear su respectivo "hola mundo" tr. "hello world".
+Como todos conocemos el paso más importante al enfrentarnos con un nuevo lenguaje, es poner en práctica nuestro "Hola Mundo" tr. "Hello World".
 
-En arduino, este paso es conocido con hacer parpadear de forma sencilla un LED.
-
+En este caso, la situación es distinta.
+En Arduino el "Hola Mundo" es hacer parpadear un LED de forma sencilla. Esa es nuestra manera de decir "Hola Mundo" .. "Hola Arduino".
 
