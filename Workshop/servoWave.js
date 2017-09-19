@@ -21,8 +21,4 @@ board.on('ready', function () {
     center: true, // default
   });
   servo.sweep(); // rotate
-  this.wait(3000, function() {  // board.wait
-    servo.stop();
-    servo.center();
-  });
 })
