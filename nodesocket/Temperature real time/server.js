@@ -17,6 +17,11 @@ var io = require('socket.io').listen(server);
 
 board.on("ready", function() {
 
+	/*
+	Este socket maneja la conexión cliente-servidor y nos ofrece las dos
+	propiedades con las que vamos a trabajar, on (escucha eventos)
+	y emit (emite eventos)
+	*/
 	io.on('connection', function(socket){
 		console.log("Persona conectada");
 		socket.emit('titulo', "Empieza a interactuar");
