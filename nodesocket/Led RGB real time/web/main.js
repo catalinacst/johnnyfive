@@ -1,10 +1,5 @@
 var socket = io.connect('http://localhost:8080', { 'forceNew': true });
 
-
-function render (colorNombre) {
-  document.getElementById('color').innerHTML = colorNombre;
-}
-
 function colorRojo(e) {
   var colorNombre = document.getElementById('Rojo').id;
   var colorHexa = document.getElementById('Rojo').value;
@@ -40,5 +35,5 @@ function funcionStrobe(e) {
 
 socket.on('mostrarColor', function(colorNombre){
   console.log("8F00FF");
-  render(colorNombre);
+  document.getElementById('color').innerHTML = colorNombre;
 });

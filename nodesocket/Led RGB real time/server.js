@@ -16,18 +16,18 @@ server.listen(8080);
 var io = require('socket.io').listen(server);
 
 board.on("ready", function() {
-
 	io.on('connection', function(socket){
 		console.log("Persona conectada");
-	  // Create a new `ledRGB` hardware instance.
+
+	  // Create a new ledRGB hardware instance.
 		var anode = new five.Led.RGB({
-	    pins: {
+			pins: {
 	      red: 6,
 	      green: 5,
 	      blue: 3
 	    },
 	    isAnode: true
-	  });
+  	});
 
 		socket.on('darColor', function(colorHexa, colorNombre){
 			anode.color(colorHexa);
@@ -46,6 +46,5 @@ board.on("ready", function() {
 		  });
 			io.sockets.emit('mostrarColor', "PARTY!!");
 		});
-
 	});
 });
