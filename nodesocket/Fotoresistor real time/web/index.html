@@ -5,36 +5,18 @@
     <title>Web</title>
   </head>
   <body>
+    <style>
+      h2{
+        font-size: 60px !important;
+      }
+    </style>
     <h1 style="text-align: center">WebSocket and JohnnyFive</h1>
     <script src="/socket.io/socket.io.js"></script>
     <script src="main.js"></script>
-    <script> var Chart = require('chart.js'); </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <br>
     <h1 style="text-align: center">Valor de la Resistencia</h1>
     <script> conocerResistencia() </script>
     <h2 id="resistencia"></h2>
-    <canvas id="bar-chart-vertical" width="200" height="200"></canvas>
-    <script>
-      new Chart(document.getElementById("bar-chart-vertical"), {
-        type: 'verticalBar',
-        data: {
-          datasets: [{
-              data: [ 500, 600, 300, 300, 100 ],
-              label: "Valor Resistencia",
-              borderColor: "#3e95cd",
-              fill: false
-            }
-          ]
-        },
-        options: {
-          title: {
-            display: true,
-            text: 'World population per region (in millions)'
-          }
-        }
-      });
-    </script>
     <br> <br>
   </body>
 </html>
