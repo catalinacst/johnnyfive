@@ -1,9 +1,9 @@
 var http = require('http');
 var express = require('express');
-var five = require('johnny-five');
+var five = require('johnny-five'); // <---- nuevo
 var app = express();
 var server = http.createServer(app);
-var board = new five.Board();
+var board = new five.Board(); // <---- nuevo
 
 app.use(express.static(__dirname + '/web'));
 
@@ -15,7 +15,8 @@ server.listen(8080);
 
 var io = require('socket.io').listen(server);
 
-board.on("ready", function() {
+board.on("ready", function() { // <---- nuevo
+	
 	// create an Led on pin 13
 	var led = new five.Led(13);
 
