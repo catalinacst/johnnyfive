@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web</title>
+  </head>
+  <body>
+    <h2>WebSocket</h2>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+    <br/>
+    <form onsubmit="return mensajeON(this)">
+      <input type="submit" id="on" value="ON">
+    </form>
+
+    <br> <br>
+
+    <form onsubmit="return mensajeOFF(this)">
+      <input type="submit" id="off" value="OFF">
+    </form>
+    <h1 id="titulo"></h1>
+  </body>
+</html>
